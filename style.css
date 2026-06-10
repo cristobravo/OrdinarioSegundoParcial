@@ -1,0 +1,100 @@
+body {
+    margin: 30px;
+    background-color: #ffffff;
+}
+
+/* 1. Barra de Navegación Azul */
+nav {
+    display: flex;
+    max-width: 800px;
+    margin: 0 auto 40px auto;
+    border: 2px solid #000000;
+}
+
+nav a {
+    flex: 1;
+    text-align: center;
+    text-decoration: none;
+    color: #000000;
+    background-color: #5b9bd5;
+    padding: 15px 0;
+    font-size: 18px;
+    border-right: 1px solid #000000;
+}
+
+nav a:last-child {
+    border-right: none;
+}
+
+/* El botón activo (en la foto, Productos está seleccionado) */
+nav a.activo {
+    background-color: #70ad47;
+    font-weight: bold;
+}
+
+/* 2. Contenedor Principal Azul del Buscador */
+.contenedor-buscador {
+    max-width: 700px;
+    margin: 0 auto;
+    background-color: #4472c4;
+    border: 5px solid #2f5597;
+    border-radius: 30px;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+/* Sub-contenedor para los campos de texto */
+.campos {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.fila-formulario {
+    display: flex;
+    align-items: center;
+}
+
+/* Etiquetas del formulario */
+label {
+    width: 90px;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+/* Inputs de texto */
+input[type="text"] {
+    flex: 1;
+    padding: 8px;
+    border: 1px solid #7f7f7f;
+    font-size: 14px;
+}
+
+/* El input de la Web que viene con texto por defecto en la foto */
+.input-web {
+    color: #ff0000;
+}
+
+/* Inputs de nombre y apellido de color verde claro */
+.input-verde {
+    background-color: #e2efda;
+}
+
+/* 3. Botón "Buscar" (Tarjeta blanca a la derecha) */
+.boton-buscar {
+    flex: 1;
+    background-color: #ffffff;
+    border: 1px solid #7f7f7f;
+    padding: 40px 20px;
+    font-size: 24px;
+    font-style: italic;
+    color: #002060;
+    font-weight: bold;
+    cursor: pointer;
+    text-align: center;
+    box-shadow: 3px 3px 5px rgba(0,0,0,0.2);
+}
